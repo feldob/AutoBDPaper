@@ -1,0 +1,18 @@
+name = "AutoBDPaper"
+uuid = "75a254e8-d4db-4afd-9091-4e190514f130"
+authors = ["Felix Dobslaw <felix.dobslaw@miun.se>"]
+version = "0.1.0"
+
+[deps]
+AutoBVA = "4af5b277-7cae-4348-aa33-ce831b548951"
+BlackBoxOptim = "a134a8b2-14d6-55f6-9291-3336d3ab0209"
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+InteractiveUtils = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
+LaTeXStrings = "b964fa9f-0449-5b57-a5c2-d3ea65f4040f"
+Latexify = "23fbe1c1-3f47-55db-b15f-69d7ec21a316"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+StringDistances = "88034a9c-02f8-509d-84a9-84ec65e18404"
