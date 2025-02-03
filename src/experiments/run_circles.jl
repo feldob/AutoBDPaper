@@ -109,7 +109,7 @@ function sut_solidcircle(args_vec::AbstractVector{<:Any})
     end
 end
 
-sut_solid_circle(x::Integer, y::Integer) = sut_solidcircle([x, y])
+sut_solid_circle(x::Integer, y::Integer) = sut_solidcircle(Any[x, y])
  
 circlesolidsut = SUT((x::Integer, y::Integer) -> sut_solid_circle(x,y), "circle solid")
 circlemultiplesut = SUT((x::Integer, y::Integer) -> solid_multiple_circles_sut(x,y), "circle multiple")
@@ -123,7 +123,7 @@ suts =                        [ circlesolidsut ]
 exectimes =                   [ 30, 600 ]
 # alorithms:
 algorithms =                  [ :bcs ]
-# repetitions:
+# repetitions:Debugger
 repetitions  =                22
 # sampling strategy:
 sss =                          [ BituniformSampling ]
@@ -131,4 +131,5 @@ sss =                          [ BituniformSampling ]
 ctss =                         [ true ]
 
 expdir = joinpath("results","circles")
+
 doexperiment(expdir, suts, exectimes, algorithms, repetitions, sss, ctss)
